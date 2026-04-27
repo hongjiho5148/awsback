@@ -9,8 +9,6 @@ spring:
     username: ${DB_USERNAME:admin}
     password: ${DB_PASSWORD:admin}
     driver-class-name: com.mysql.cj.jdbc.Driver
-    hikari:
-      connection-test-query: SELECT 1  # <--- 이거 추가!
   jpa:
     hibernate:
      ddl-auto: update
@@ -19,7 +17,3 @@ spring:
     properties:
      hibernate:
         format_sql: true
-
-logging:
-  level:
-    com.zaxxer.hikari: DEBUG
