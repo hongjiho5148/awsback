@@ -4,15 +4,15 @@ server:
 spring:
   application:
     name: aws-lab-backend
- datasource:
-   url: ${DB_URL}
-   username: ${DB_USERNAME:admin}
-   password: ${DB_PASSWORD:admin}
-   driver-class-name: com.mysql.cj.jdbc.Driver
- jpa:
-   hibernate:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME:admin}
+    password: ${DB_PASSWORD:admin}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
      ddl-auto: update
-   show-sql: true
-   properties:
+    show-sql: true
+    properties:
      hibernate:
        format_sql: true
