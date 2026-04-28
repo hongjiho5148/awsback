@@ -1,6 +1,11 @@
 server:
   port: 8080
 
+
+cloud:
+  aws:
+    region: ap-northeast-2
+    
 spring:
   application:
     name: aws-lab-backend
