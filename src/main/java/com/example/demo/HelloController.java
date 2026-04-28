@@ -1,13 +1,9 @@
 package com.example.demo;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
-import javax.sql.DataSource;
-import java.sql.Connection;
 
 @RestController
 // 프론트엔드에서 오는 API 요청을 허용하기 위한 CORS 설정
