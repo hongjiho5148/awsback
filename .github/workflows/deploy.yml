@@ -77,6 +77,7 @@ jobs:
             -e DB_URL="${{ secrets.DB_URL }}" \
             -e DB_USERNAME="${{ secrets.DB_USERNAME }}" \
             -e DB_PASSWORD="${{ secrets.DB_PASSWORD }}" \
+            -e S3_BUCKET_NAME="${{ secrets.S3_BUCKET_NAME }}" \
             ${{ steps.login-ecr.outputs.registry }}/aws-lab-app:latest
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
