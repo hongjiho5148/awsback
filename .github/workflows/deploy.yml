@@ -74,6 +74,8 @@ jobs:
           # -e 옵션을 사용하여 GitHub Secrets 값을 컨테이너 내부로 주입합니다.
           sudo docker run -d --name aws-lab-app \
             -p 8080:8080 \
+            -e AWS_ACCESS_KEY_ID="${{ secrets.AWS_ACCESS_KEY_ID }}" \
+            -e AWS_SECRET_ACCESS_KEY="${{ secrets.AWS_SECRET_ACCESS_KEY }}" \
             -e DB_URL="${{ secrets.DB_URL }}" \
             -e DB_USERNAME="${{ secrets.DB_USERNAME }}" \
             -e DB_PASSWORD="${{ secrets.DB_PASSWORD }}" \
